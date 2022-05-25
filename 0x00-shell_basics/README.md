@@ -1,2 +1,2 @@
 #!/bin/bash
-script that prints the absolute path name of the current working directory
+changes the working directory to the user’s home directory
