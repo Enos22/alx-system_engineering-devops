@@ -1,1 +1,2 @@
-My basics in bash
+#!/bin/bash
+shell basics
