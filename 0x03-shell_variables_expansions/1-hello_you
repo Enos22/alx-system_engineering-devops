@@ -1,2 +1,2 @@
 #!/bin/bash
-alias current user="hello MyUser"
+alias user="hello MyUser"
