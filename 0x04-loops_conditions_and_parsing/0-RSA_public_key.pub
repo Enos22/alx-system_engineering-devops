@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKnGIcvVVquTIKXoMUVgpIyRH2ig8RvPHKVZSJJsV1rf enos.arenga@gmail.com
+ssh-rsa AAAAC3NzaC1lZDI1NTE5AAAAIKnGIcvVVquTIKXoMUVgpIyRH2ig8RvPHKVZSJJsV1rf enos.arenga@gmail.com
