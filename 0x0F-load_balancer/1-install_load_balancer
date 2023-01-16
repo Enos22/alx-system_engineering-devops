@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#install load balancer
+sudo apt-get -y update
+sudo apt-get -y upgrade
+sudo apt-get -y install haproxy
+#configure HAproxy
+print %s "
+frontend http_front
+	bind *;80
+	mode http
+	default_backend http_back
+
+backend http-back
+	balance roundrobin
+	server web-01 34.234.203.37:80
+check
+	server web-02 52.90.0.34:80
+check
+" >> /etc/haproxy/haproxy.cfg
+sudo sed -i "s/ENABLED=0/ENABLED=1/" /etc/default/haproxy
+
+service haproxy restart
